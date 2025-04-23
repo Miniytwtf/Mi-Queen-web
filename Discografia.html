@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Discografía de Queen</title>
+  <style>
+    body {
+      background-color: #535050;
+      font-family: sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 18px 0;
+    }
+
+    .title {
+      color: white;
+      text-align: center;
+      font-size: 45px;
+      background: linear-gradient(45deg, #FFD700, #000000);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    nav, ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-style: none;
+      background-color: white;
+    }
+
+    .footer {
+      background: linear-gradient(45deg, #FFD700, #000000);
+      padding: 25px;
+      text-align: center;
+    }
+
+    .main {
+      flex: 1;
+      padding: 15px;
+      font-size: 100%;
+    }
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+    }
+    .footer {
+      background: linear-gradient(45deg, #FFD700, #000000);
+      padding: 25px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+    }
+
+    /* Carrusel estilo QueenOnline */
+    .carousel-container {
+      position: relative;
+      width: 90%;
+      margin: 40px auto;
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      gap: 20px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+      flex: 0 0 20%; /* 5 visibles */
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+
+    .carousel-item:hover {
+      transform: scale(1.05);
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .arrow-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255,255,255,0.2);
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .left-arrow {
+      left: 10px;
+    }
+
+    .right-arrow {
+      right: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-item {
+        flex: 0 0 33.33%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .carousel-item {
+        flex: 0 0 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="title">QUEEN</div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><button>Inicio</button></a></li>
+        <li><a href="Estilo musical.html"><button>Estilo Musical</button></a></li>
+        <li><a href="Historia.html"><button>Historia</button></a></li>
+        <li><a href="Miembros.html"><button>Miembros</button></a></li>
+        <li><a href="Discografia.html"><button>Discografía</button></a></li>
+        <li><a href="Contacto.html"><button>Contactanos</button></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="carousel-container">
+    <button class="arrow-btn left-arrow" onclick="moveSlide(-1)">←</button>
+    <button class="arrow-btn right-arrow" onclick="moveSlide(1)">→</button>
+
+    <div class="carousel-track" id="carouselTrack">
+      <div class="carousel-item">
+        <a href="Albumes/Queen.html" target="Albumes"><img src="Albumes/img/Disco1.jpg"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="Albumes/Queen 2.html" target="Albumes"><img src="Albumes/img/Disco 2.jpg"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="Albumes/Sheer Heart Attack.html" target="Albumes"><img src="Albumes/img/Disco 3.jpg"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="Albumes/A Night At The Opera.html" target="Albumes"><img src="Albumes/img/Disco 4.jpg"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="Albumes/A Day At The Races.html" target="Albumes"><img src="Albumes/img/Disco 5.jpg"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="Albumes/News Of The World.html" target="Albumes"><img src="Albumes/img/Disco 6.jpg"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="Albumes/Jazz.html" target="Albumes"><img src="Albumes/img/Disco 7.jpg"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="Albumes/The Game.html" target="Albumes"><img src="Albumes/img/Disco 8.jpg"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="Albumes/Flash Gordon.html" target="Albumes"><img src="Albumes/img/Disco 9.jpg"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="Albumes/Hot Space.html" target="Albumes"><img src="Albumes/img/Disco 10.jpg"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="Albumes/The Works.html" target="Albumes"><img src="Albumes/img/Disco 11.jpg"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="Albumes/A Kind Of Magic.html" target="Albumes"><img src="Albumes/img/Disco 12.jpg"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="Albumes/The Miracle.html" target="Albumes"><img src="Albumes/img/Disco 13.jpg"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="Albumes/Innuendo.html" target="Albumes"><img src="Albumes/img/Disco 14.jpg"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="Albumes/Made In Haeven.html" target="Albumes"><img src="Albumes/img/Disco 15.jpg"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <iframe name="Albumes"></iframe>
+  </div>
+
+  <div class="footer">
+    <p>Derechos reservados&nbsp;&nbsp;&nbsp;Lenin Josue Mairena Rivas &nbsp;&nbsp;&nbsp;III BTP Informática S11 &copy; 2025</p>
+  </div>
+
+  <script>
+    const track = document.getElementById("carouselTrack");
+    const items = document.querySelectorAll(".carousel-item");
+    const itemWidth = items[0].offsetWidth + 20;
+    let currentIndex = 0;
+
+    function moveSlide(direction) {
+      const visibleItems = Math.floor(track.parentElement.offsetWidth / itemWidth);
+      const maxIndex = items.length - visibleItems;
+
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = 0;
+      if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+      track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    }
+
+    window.addEventListener("resize", () => {
+      currentIndex = 0;
+      track.style.transform = `translateX(0px)`;
+    });
+  </script>
+
+</body>
+</html>
